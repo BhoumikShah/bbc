@@ -1,0 +1,161 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  display: inline-block;
+  height: auto;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.header__highlights {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  height: 10vh;
+  font-size: 2em;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.date {
+  color: grey;
+  font-size: 0.8em;
+}
+
+.highlights {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+
+  height: auto;
+}
+
+
+.highlight__section {
+  height: 100%;
+  background-color: white;
+  width: 50%;
+}
+
+.highlight__section.left {
+  overflow: hidden;
+  height: fit-content;
+}
+
+.highlight-main-image {
+  width: 100%;
+  height: auto;
+}
+
+.highlight__section.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  column-gap: 1%;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1275px) {
+  
+  .highlights {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width: 700px) {
+
+  .highlights {
+    align-items: center;
+    width: 100%;
+  }
+  .header__highlights {
+   font-size: 1.7em;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+  }
+  .highlight__section {
+    background-color: none;
+    width: 90%;
+  }
+  
+}
+
+.sub-article {
+  width: 49%;
+  max-height: 50%;
+  height: auto;
+  max-height: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news {
+  border-left-color: red;
+  border-left-width: 6px;
+  border-left-style: solid;
+  text-indent: 0.5em;
+}
+
+.minor-news {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  /* padding: 0 1% 0 1%; */
+  gap: 10px;
+}
+
+.minor-child {
+  display: flex;
+  flex-direction: column;
+  width: 31%;
+}
+
+.highlight-minor-image {
+  width: auto;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.minor-desc {
+  margin-top: 5px;
+  height: 90px;
+
+}
+.topic {
+  color: grey;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  border-left-color: red;
+  border-left-width: 3px;
+  border-left-style: solid;
+  text-indent: 0.5em;
+  
+}
+
+@media only screen and (max-width: 750px) {
+  .minor-news {
+    width: 100%;
+    justify-content: center;
+  }
+}
